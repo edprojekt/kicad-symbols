@@ -2,17 +2,14 @@
 	(version 20251024)
 	(generator "kicad_symbol_editor")
 	(generator_version "10.0")
-	(symbol "PAL24"
-		(pin_names
-			(offset 1.016)
-		)
+	(symbol "PAL22V10-xxP"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "U"
-			(at -11.938 17.526 0)
+			(at -6.858 17.018 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -21,8 +18,8 @@
 				)
 			)
 		)
-		(property "Value" "PAL24"
-			(at 9.906 17.526 0)
+		(property "Value" "PAL22V10-xxP"
+			(at 10.414 17.018 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -31,19 +28,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 0 -1.27 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 -1.27 0)
+		(property "Footprint" "Package_DIP:DIP-24_W7.62mm"
+			(at 0 -26.67 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -53,7 +39,29 @@
 				)
 			)
 		)
-		(property "Description" "generic 24-pin Programmable Array Logic (PAL) device"
+		(property "Datasheet" "https://web.archive.org/web/20251006042442/https://www.silicon-ark.co.uk/datasheets/pal22v10-pal22v10a-datasheet-amd.pdf"
+			(at 0 -21.59 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "24-pin TTL Versatile PAL Device, DIP-24"
+			(at 0 -24.13 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "Obsolete AMD PLD Programmable-Array-Logic PAL22V10-15PC AmPAL22V10APC"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -64,7 +72,7 @@
 				)
 			)
 		)
-		(property "ki_keywords" "logic programmable PAL"
+		(property "ki_fp_filters" "DIP*W7.62mm*"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -75,10 +83,10 @@
 				)
 			)
 		)
-		(symbol "PAL24_0_1"
+		(symbol "PAL22V10-xxP_0_1"
 			(rectangle
-				(start -11.43 -13.97)
-				(end 11.43 16.51)
+				(start -7.62 15.24)
+				(end 7.62 -17.78)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -88,11 +96,11 @@
 				)
 			)
 		)
-		(symbol "PAL24_1_1"
-			(pin passive line
-				(at -15.24 15.24 0)
-				(length 3.81)
-				(name "OD/CLK"
+		(symbol "PAL22V10-xxP_1_1"
+			(pin input line
+				(at -10.16 12.7 0)
+				(length 2.54)
+				(name "I_{0}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -106,11 +114,12 @@
 						)
 					)
 				)
+				(alternate "CLK" input line)
 			)
-			(pin passive line
-				(at -15.24 10.16 0)
-				(length 3.81)
-				(name "I0"
+			(pin input line
+				(at -10.16 10.16 0)
+				(length 2.54)
+				(name "I_{1}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -125,10 +134,10 @@
 					)
 				)
 			)
-			(pin passive line
-				(at -15.24 7.62 0)
-				(length 3.81)
-				(name "I1"
+			(pin input line
+				(at -10.16 7.62 0)
+				(length 2.54)
+				(name "I_{2}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -143,10 +152,10 @@
 					)
 				)
 			)
-			(pin passive line
-				(at -15.24 5.08 0)
-				(length 3.81)
-				(name "I2"
+			(pin input line
+				(at -10.16 5.08 0)
+				(length 2.54)
+				(name "I_{3}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -161,10 +170,10 @@
 					)
 				)
 			)
-			(pin passive line
-				(at -15.24 2.54 0)
-				(length 3.81)
-				(name "I3"
+			(pin input line
+				(at -10.16 2.54 0)
+				(length 2.54)
+				(name "I_{4}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -179,10 +188,10 @@
 					)
 				)
 			)
-			(pin passive line
-				(at -15.24 0 0)
-				(length 3.81)
-				(name "I4"
+			(pin input line
+				(at -10.16 0 0)
+				(length 2.54)
+				(name "I_{5}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -197,10 +206,10 @@
 					)
 				)
 			)
-			(pin passive line
-				(at -15.24 -2.54 0)
-				(length 3.81)
-				(name "I5"
+			(pin input line
+				(at -10.16 -2.54 0)
+				(length 2.54)
+				(name "I_{6}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -215,10 +224,10 @@
 					)
 				)
 			)
-			(pin passive line
-				(at -15.24 -5.08 0)
-				(length 3.81)
-				(name "I6"
+			(pin input line
+				(at -10.16 -5.08 0)
+				(length 2.54)
+				(name "I_{7}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -233,10 +242,10 @@
 					)
 				)
 			)
-			(pin passive line
-				(at -15.24 -7.62 0)
-				(length 3.81)
-				(name "I7"
+			(pin input line
+				(at -10.16 -7.62 0)
+				(length 2.54)
+				(name "I_{8}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -251,10 +260,10 @@
 					)
 				)
 			)
-			(pin passive line
-				(at -15.24 -10.16 0)
-				(length 3.81)
-				(name "I8"
+			(pin input line
+				(at -10.16 -10.16 0)
+				(length 2.54)
+				(name "I_{9}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -269,10 +278,10 @@
 					)
 				)
 			)
-			(pin passive line
-				(at -15.24 -12.7 0)
-				(length 3.81)
-				(name "I9"
+			(pin input line
+				(at -10.16 -12.7 0)
+				(length 2.54)
+				(name "I_{10}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -287,9 +296,9 @@
 					)
 				)
 			)
-			(pin passive line
-				(at 0 -17.78 90)
-				(length 3.81)
+			(pin power_in line
+				(at 0 -20.32 90)
+				(length 2.54)
 				(name "GND"
 					(effects
 						(font
@@ -305,10 +314,10 @@
 					)
 				)
 			)
-			(pin passive line
-				(at 15.24 15.24 180)
-				(length 3.81)
-				(name "CLK/OD"
+			(pin input line
+				(at -10.16 -15.24 0)
+				(length 2.54)
+				(name "I_{11}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -323,10 +332,10 @@
 					)
 				)
 			)
-			(pin passive line
-				(at 15.24 -12.7 180)
-				(length 3.81)
-				(name "LR/O4"
+			(pin bidirectional line
+				(at 10.16 12.7 180)
+				(length 2.54)
+				(name "I/O_{0}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -341,10 +350,10 @@
 					)
 				)
 			)
-			(pin passive line
-				(at 15.24 -10.16 180)
-				(length 3.81)
-				(name "A0/O3"
+			(pin bidirectional line
+				(at 10.16 10.16 180)
+				(length 2.54)
+				(name "I/O_{1}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -359,10 +368,10 @@
 					)
 				)
 			)
-			(pin passive line
-				(at 15.24 -7.62 180)
-				(length 3.81)
-				(name "A1/O2"
+			(pin bidirectional line
+				(at 10.16 7.62 180)
+				(length 2.54)
+				(name "I/O_{2}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -377,10 +386,10 @@
 					)
 				)
 			)
-			(pin passive line
-				(at 15.24 -5.08 180)
-				(length 3.81)
-				(name "A2/O1"
+			(pin bidirectional line
+				(at 10.16 5.08 180)
+				(length 2.54)
+				(name "I/O_{3}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -395,10 +404,10 @@
 					)
 				)
 			)
-			(pin passive line
-				(at 15.24 -2.54 180)
-				(length 3.81)
-				(name "NC/O0"
+			(pin bidirectional line
+				(at 10.16 2.54 180)
+				(length 2.54)
+				(name "I/O_{4}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -413,10 +422,10 @@
 					)
 				)
 			)
-			(pin passive line
-				(at 15.24 0 180)
-				(length 3.81)
-				(name "O4/NC"
+			(pin bidirectional line
+				(at 10.16 0 180)
+				(length 2.54)
+				(name "I/O_{5}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -431,10 +440,10 @@
 					)
 				)
 			)
-			(pin passive line
-				(at 15.24 2.54 180)
-				(length 3.81)
-				(name "O3/A2"
+			(pin bidirectional line
+				(at 10.16 -2.54 180)
+				(length 2.54)
+				(name "I/O_{6}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -449,10 +458,10 @@
 					)
 				)
 			)
-			(pin passive line
-				(at 15.24 5.08 180)
-				(length 3.81)
-				(name "O2/A1"
+			(pin bidirectional line
+				(at 10.16 -5.08 180)
+				(length 2.54)
+				(name "I/O_{7}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -467,10 +476,10 @@
 					)
 				)
 			)
-			(pin passive line
-				(at 15.24 7.62 180)
-				(length 3.81)
-				(name "O1/A0"
+			(pin bidirectional line
+				(at 10.16 -7.62 180)
+				(length 2.54)
+				(name "I/O_{8}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -485,10 +494,10 @@
 					)
 				)
 			)
-			(pin passive line
-				(at 15.24 10.16 180)
-				(length 3.81)
-				(name "O0/LR"
+			(pin bidirectional line
+				(at 10.16 -10.16 180)
+				(length 2.54)
+				(name "I/O_{9}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -503,10 +512,10 @@
 					)
 				)
 			)
-			(pin passive line
-				(at 0 20.32 270)
-				(length 3.81)
-				(name "VCC"
+			(pin power_in line
+				(at 0 17.78 270)
+				(length 2.54)
+				(name "V_{CC}"
 					(effects
 						(font
 							(size 1.27 1.27)
